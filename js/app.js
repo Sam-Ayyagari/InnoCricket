@@ -3,7 +3,7 @@
 
 var innoCricket = angular.module('innoCricket', []);
 
-
+//Routing starts here
   innoCricket.config(function($routeProvider){
     $routeProvider
     .when('/',{templateUrl:'views/update.html', controller:'HomeController'})
