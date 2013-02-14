@@ -1,7 +1,7 @@
 'use strict';
 //To check git changes
 
-var  = angular.module('innoCricket', []);
+var innoCricket = angular.module('innoCricket', []);
 
 
   innoCricket.config(function($routeProvider){
