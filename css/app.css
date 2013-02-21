@@ -1,0 +1,22 @@
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 400px; 
+    height: 300px
+}
+td > span, th>span {
+    display:block;
+    padding:20px;
+}
+th > span {
+    background-color:#eee;
+}
+table td, table th {
+    border:1px solid grey;
+    }
+table {
+    width:100%;
+}
+
+#main {
+    padding:20px;
+}

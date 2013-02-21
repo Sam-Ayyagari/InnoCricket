@@ -4,6 +4,13 @@ innoCricket.controller('ProfilesController',
       //console.debug('Profiles page');
       $scope.players = players = [];
 
+      $scope.addPlayer = function() {
+        players.push($scope.playerName);
+        console.log(playername);
+      };
+
+      
+
       $http({method: 'GET', url: '/myangular/data/players.json'}).
         success(function(data, status, headers, config) {
          // console.log('Inside success callback');

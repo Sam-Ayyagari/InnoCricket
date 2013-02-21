@@ -1,7 +1,7 @@
 'use strict';
 //To check git changestretert
 
-var innoCricket = angular.module('innoCricket', []);
+var innoCricket = angular.module('innoCricket', ['ngGrid']);
 
 //Routing starts here
   innoCricket.config(function($routeProvider){
@@ -9,6 +9,7 @@ var innoCricket = angular.module('innoCricket', []);
     .when('/',{templateUrl:'views/update.html', controller:'HomeController'})
     .when ('/profiles',{templateUrl:'views/profiles.html', controller:'ProfilesController'})
     .when ('/gallery',{templateUrl:'views/update.html', controller:'ProfilesController'})
-    .when ('/previous',{templateUrl:'views/update.html', controller:'ProfilesController'})
+    .when ('/previous',{templateUrl:'views/previous.html', controller:'PreviousController'})
+    .when('/player/:playerId', {templateUrl:'views/player-Info.html', controller:'PlayerDetailsController'})
 
   });

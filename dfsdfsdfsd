@@ -1,0 +1,85 @@
+[33mcommit 157fa81e2afa4ca53de4862fc04b2addd6299e0d[m
+Author: Sam-Ayyagari <sayyagari@innomindscom>
+Date:   Thu Feb 14 13:54:20 2013 +0530
+
+    Added comment for routing
+
+[1mdiff --git a/js/app.js b/js/app.js[m
+[1mindex b53922a..9507a0c 100644[m
+[1m--- a/js/app.js[m
+[1m+++ b/js/app.js[m
+[36m@@ -3,7 +3,7 @@[m
+ [m
+ var innoCricket = angular.module('innoCricket', []);[m
+ [m
+[31m-[m
+[32m+[m[32m//Routing starts here[m
+   innoCricket.config(function($routeProvider){[m
+     $routeProvider[m
+     .when('/',{templateUrl:'views/update.html', controller:'HomeController'})[m
+
+[33mcommit 9e3ebc4981c88e8627ed2f692fbc89231cb6983a[m
+Author: Sam-Ayyagari <sayyagari@innomindscom>
+Date:   Thu Feb 14 12:34:32 2013 +0530
+
+    Added innocric varibale
+
+[1mdiff --git a/js/app.js b/js/app.js[m
+[1mindex 860c321..b53922a 100644[m
+[1m--- a/js/app.js[m
+[1m+++ b/js/app.js[m
+[36m@@ -1,7 +1,7 @@[m
+ 'use strict';[m
+ //To check git changes[m
+ [m
+[31m-var  = angular.module('innoCricket', []);[m
+[32m+[m[32mvar innoCricket = angular.module('innoCricket', []);[m
+ [m
+ [m
+   innoCricket.config(function($routeProvider){[m
+
+[33mcommit f534ddac7da1edcfe51c5b35f240672f6e4dcb53[m
+Author: Sam-Ayyagari <sayyagari@innomindscom>
+Date:   Thu Feb 14 12:28:39 2013 +0530
+
+    These are new changes
+
+[1mdiff --git a/js/app.js b/js/app.js[m
+[1mindex ab4e681..860c321 100644[m
+[1m--- a/js/app.js[m
+[1m+++ b/js/app.js[m
+[36m@@ -1,6 +1,7 @@[m
+ 'use strict';[m
+[32m+[m[32m//To check git changes[m
+ [m
+[31m-var innoCricket = angular.module('innoCricket', []);[m
+[32m+[m[32mvar  = angular.module('innoCricket', []);[m
+ [m
+ [m
+   innoCricket.config(function($routeProvider){[m
+
+[33mcommit 680385899828a01b83919c805d04f32de8fbb91d[m
+Author: Sam-Ayyagari <ryerubandi@innominds.com>
+Date:   Thu Feb 14 11:41:08 2013 +0530
+
+    Initial commit
+
+[1mdiff --git a/js/app.js b/js/app.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ab4e681[m
+[1m--- /dev/null[m
+[1m+++ b/js/app.js[m
+[36m@@ -0,0 +1,13 @@[m
+[32m+[m[32m'use strict';[m
+[32m+[m
+[32m+[m[32mvar innoCricket = angular.module('innoCricket', []);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m  innoCricket.config(function($routeProvider){[m
+[32m+[m[32m    $routeProvider[m
+[32m+[m[32m    .when('/',{templateUrl:'views/update.html', controller:'HomeController'})[m
+[32m+[m[32m    .when ('/profiles',{templateUrl:'views/profiles.html', controller:'ProfilesController'})[m
+[32m+[m[32m    .when ('/gallery',{templateUrl:'views/update.html', controller:'ProfilesController'})[m
+[32m+[m[32m    .when ('/previous',{templateUrl:'views/update.html', controller:'ProfilesController'})[m
+[32m+[m
+[32m+[m[32m  });[m
